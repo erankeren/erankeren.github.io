@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EranKeren</title>
+    <title>Eran Keren</title>
     <link>https://erankeren.github.io/</link>
-    <description>Recent content on EranKeren</description>
+    <description>Recent content on Eran Keren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Sep 2016 11:43:42 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2016 20:13:09 +0100</lastBuildDate>
     <atom:link href="https://erankeren.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title></title>
+      <title>How can you contact me?</title>
+      <link>https://erankeren.github.io/contact/</link>
+      <pubDate>Tue, 13 Sep 2016 20:13:09 +0100</pubDate>
+      
+      <guid>https://erankeren.github.io/contact/</guid>
+      <description>
+
+&lt;h3 id=&#34;email&#34;&gt;EMAIL&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;mailto:me@erankeren.me&#34;&gt;me@erankeren.me&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;linkedin&#34;&gt;LINKEDIN&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/erank&#34;&gt;https://www.linkedin.com/in/erank&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;github&#34;&gt;GITHUB&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/erankeren/&#34;&gt;https://github.com/erankeren/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;twitter&#34;&gt;TWITTER&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/erank_me&#34;&gt;@erank_me&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;telegram&#34;&gt;TELEGRAM&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://telegram.me/erank&#34;&gt;https://telegram.me/erank&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Who am I?</title>
       <link>https://erankeren.github.io/about/</link>
       <pubDate>Tue, 13 Sep 2016 11:43:42 +0100</pubDate>
       
       <guid>https://erankeren.github.io/about/</guid>
-      <description>
-
-&lt;h3 id=&#34;hey-there&#34;&gt;&lt;strong&gt;Hey There (-;&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m Eran Keren.&lt;/p&gt;
-
-&lt;p&gt;A software ninja / coder / manager / full-stack / hands-on.&lt;/p&gt;
+      <description>&lt;p&gt;A software ninja / coder / manager / full-stack / hands-on.&lt;/p&gt;
 
 &lt;p&gt;I live in London and enjoy swimming in the cold Hampstead ponds 🙂&lt;/p&gt;
 
