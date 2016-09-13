@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eran Keren</title>
-    <link>https://erankeren.github.io/</link>
+    <link>https://erankeren.com/</link>
     <description>Recent content on Eran Keren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Sep 2016 20:13:09 +0100</lastBuildDate>
-    <atom:link href="https://erankeren.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://erankeren.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How can you contact me?</title>
-      <link>https://erankeren.github.io/contact/</link>
+      <link>https://erankeren.com/contact/</link>
       <pubDate>Tue, 13 Sep 2016 20:13:09 +0100</pubDate>
       
-      <guid>https://erankeren.github.io/contact/</guid>
+      <guid>https://erankeren.com/contact/</guid>
       <description>
 
 &lt;h3 id=&#34;email&#34;&gt;EMAIL&lt;/h3&gt;
@@ -41,15 +41,15 @@
     
     <item>
       <title>Who am I?</title>
-      <link>https://erankeren.github.io/about/</link>
+      <link>https://erankeren.com/about/</link>
       <pubDate>Tue, 13 Sep 2016 11:43:42 +0100</pubDate>
       
-      <guid>https://erankeren.github.io/about/</guid>
+      <guid>https://erankeren.com/about/</guid>
       <description>&lt;p&gt;A software ninja / coder / manager / full-stack / hands-on.&lt;/p&gt;
 
 &lt;p&gt;I live in London and enjoy swimming in the cold Hampstead ponds 🙂&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://erankeren.github.io/img/pond.jpeg&#34; width=&#34;300px&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://erankeren.com/img/pond.jpeg&#34; width=&#34;300px&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m also a human being / husband / father / basketball player / jogger / &amp;hellip;&lt;/p&gt;
 </description>
