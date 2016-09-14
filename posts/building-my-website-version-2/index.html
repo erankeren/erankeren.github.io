@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Building my website - Version II &middot; Eran Keren </title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.16" />
+
+
+<link rel="stylesheet" href="https://erankeren.com/css/vec.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://erankeren.com/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://erankeren.com/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Eran Keren" />
+
+</head>
+
+<body>
+  <header>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/">/home/eran keren</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/about">~/about</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/contact">~/contact</a>
+      </li>
+      
+      
+      <li class="pull-left current">
+        <a href="https://erankeren.com/posts">~/posts</a>
+      </li>
+      
+  
+      <li class="pull-right"><a href=""><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="content">
+    
+    
+    <section class="post">
+      <h2 class="post-title"><a href="https://erankeren.com/posts/building-my-website-version-2/">Building my website - Version II</a></h2>
+      <span class="post-date">Sep 14, 2016 </span>
+      <div class="post-content">
+        
+
+<h1 id="what">What?!</h1>
+
+<p>&hellip;I got everything working, but then I was thinking to myself why do I need to have such a heavy stack just for creating a few pages ?!</p>
+
+<p>Also I&rsquo;ve found out that github pages supports custom domains&hellip;<strong>yeah - free hosting!</strong></p>
+
+<h2 id="so">So&hellip;</h2>
+
+<p>I will go with the following stack:</p>
+
+<ol>
+<li><p><a href="https://pages.github.com/">Github pages</a></p></li>
+
+<li><p><a href="https://gohugo.io/">Hugo</a> - static page generator</p></li>
+
+<li><p><a href="https://github.com/IvanChou/yii.im">Vec</a> - for my hugo theme</p></li>
+
+<li><p><a href="https://cloudflare.com">Cloudflare</a></p></li>
+</ol>
+
+<p>I had to create two git repo&rsquo;s:</p>
+
+<ol>
+<li><p>A repo for my source files for hugo (<a href="https://github.com/erankeren/erankeren.com-site">https://github.com/erankeren/erankeren.com-site</a>)</p></li>
+
+<li><p>A repo for serving my github page (<a href="https://github.com/erankeren/erankeren.github.io">https://github.com/erankeren/erankeren.github.io</a>)</p></li>
+</ol>
+
+<p>Now I had to change the dns records in cloudflare to point to my github page.</p>
+
+<h1 id="oops">Oops&hellip;</h1>
+
+<p>It was working fine with just one glich: Github pages doesnt support SSL with custom domain (<strong>really&hellip;why??</strong>)</p>
+
+<h2 id="finally">Finally</h2>
+
+<p>I could have just use HTTP but my security background didn&rsquo;t allow me to do so.</p>
+
+<p>And then I&rsquo;ve found this post in the cloudflare blog:
+<a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/</a></p>
+
+<p><strong><em>&hellip;Yeah&hellip; :-)</em></strong></p>
+
+      </div>
+    </section>
+    
+    <section class="pagination clearfix">
+      
+      <a class="btn previous " href="https://erankeren.com/posts/building-my-website-version-1/"> Building my website - Version I </a> 
+       
+      
+    </section>
+    
+    
+  </div>
+  
+  <footer>
+  <div class="footer-info">
+    <p>
+      <a href="mailto:me@erankeren.com?subject="><i class="fa fa-envelope-o"></i> me@erankeren.com </a>
+      {
+        <a href="https://gohugo.io/" title="Hugo :: A fast and modern static website engine">Hugo 0.16</a>,
+        <a href="https://github.com/IvanChou/yii.im" title="vec">Vec</a> 
+      }
+      {<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="CC BY-NC-ND 3.0">CC BY-NC-ND 3.0</a>}
+    </p>
+  </div>
+</footer>
+  
+  <script src="https://erankeren.com/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics tracking code', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>

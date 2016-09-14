@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Building my website - Version I &middot; Eran Keren </title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.16" />
+
+
+<link rel="stylesheet" href="https://erankeren.com/css/vec.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://erankeren.com/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://erankeren.com/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Eran Keren" />
+
+</head>
+
+<body>
+  <header>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/">/home/eran keren</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/about">~/about</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://erankeren.com/contact">~/contact</a>
+      </li>
+      
+      
+      <li class="pull-left current">
+        <a href="https://erankeren.com/posts">~/posts</a>
+      </li>
+      
+  
+      <li class="pull-right"><a href=""><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="content">
+    
+    
+    <section class="post">
+      <h2 class="post-title"><a href="https://erankeren.com/posts/building-my-website-version-1/">Building my website - Version I</a></h2>
+      <span class="post-date">Sep 14, 2016 </span>
+      <div class="post-content">
+        
+
+<h2 id="wordpress">Wordpress</h2>
+
+<p>At first I thought about building my website using good old wordpress. I thought about the following stack:</p>
+
+<ol>
+<li><p>Amazon ec2 instance for the server</p></li>
+
+<li><p>Wordpress running inside a docker container (because installing wordpress is a nightmare! and docker is cool&hellip;)
+<strong><a href="https://github.com/eugeneware/docker-wordpress-nginx">https://github.com/eugeneware/docker-wordpress-nginx</a></strong></p></li>
+
+<li><p>Nginx - reverse proxy into wordpress inside the docker</p></li>
+
+<li><p>Cloudflare - for the free ssl certificates and dns manager</p></li>
+</ol>
+
+<p>I could have just bought a hosted soultion like they offer at <strong><a href="https://uk.godaddy.com/hosting/wordpress-hosting">godaddy</a></strong> but I love playing with stuff.</p>
+
+<h2 id="wait">Wait&hellip;</h2>
+
+<p>After installing and configuring all of the above there were two things I had to fix:</p>
+
+<ol>
+<li><p>The theme I was using was pulling google fonts JS using HTTP and not HTTPS, which caused the browser to display an error about mixing HTTP and HTTPS. So i&rsquo;ve found this (thanks google):
+<a href="http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/">http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/</a></p></li>
+
+<li><p>Wordpress is not playing nice behind a reverse proxy, fixed by:
+<a href="https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/">https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/</a></p></li>
+</ol>
+
+      </div>
+    </section>
+    
+    <section class="pagination clearfix">
+       
+      
+      <a class="btn next " href="https://erankeren.com/posts/building-my-website-version-2/"> Building my website - Version II </a> 
+      
+    </section>
+    
+    
+  </div>
+  
+  <footer>
+  <div class="footer-info">
+    <p>
+      <a href="mailto:me@erankeren.com?subject="><i class="fa fa-envelope-o"></i> me@erankeren.com </a>
+      {
+        <a href="https://gohugo.io/" title="Hugo :: A fast and modern static website engine">Hugo 0.16</a>,
+        <a href="https://github.com/IvanChou/yii.im" title="vec">Vec</a> 
+      }
+      {<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="CC BY-NC-ND 3.0">CC BY-NC-ND 3.0</a>}
+    </p>
+  </div>
+</footer>
+  
+  <script src="https://erankeren.com/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics tracking code', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
