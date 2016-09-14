@@ -10,7 +10,7 @@
     <atom:link href="https://erankeren.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>How can you contact me?</title>
+      <title></title>
       <link>https://erankeren.com/contact/</link>
       <pubDate>Tue, 13 Sep 2016 20:13:09 +0100</pubDate>
       
@@ -19,7 +19,7 @@
 
 &lt;h3 id=&#34;email&#34;&gt;EMAIL&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;mailto:me@erankeren.me&#34;&gt;me@erankeren.me&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:me@erankeren.com&#34;&gt;me@erankeren.com&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;linkedin&#34;&gt;LINKEDIN&lt;/h3&gt;
 
@@ -40,18 +40,32 @@
     </item>
     
     <item>
-      <title>Who am I?</title>
+      <title>About me</title>
       <link>https://erankeren.com/about/</link>
       <pubDate>Tue, 13 Sep 2016 11:43:42 +0100</pubDate>
       
       <guid>https://erankeren.com/about/</guid>
-      <description>&lt;p&gt;A software ninja / coder / manager / full-stack / hands-on.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;I live in London and enjoy swimming in the cold Hampstead ponds 🙂&lt;/p&gt;
+&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;
+
+&lt;p&gt;My name is Eran, I live in beautiful Hampstead, London; Originally from Tel-Aviv, Israel.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-do-i-do&#34;&gt;What do I do?&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m a software engineer / developer and a manager. I have 10+ years of experince writing software for the cyber-security space. I love backend engineering and going full-stack.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-can-you-contact-me&#34;&gt;How can you contact me?&lt;/h2&gt;
+
+&lt;p&gt;Send me an email at &lt;strong&gt;&lt;a href=&#34;mailto:me@erankeren.com&#34;&gt;me@erankeren.com&lt;/a&gt;&lt;/strong&gt; or look at my &lt;strong&gt;&lt;a href=&#34;https://erankeren.com/contact&#34;&gt;contact page&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-else&#34;&gt;What else?&lt;/h2&gt;
+
+&lt;p&gt;I enjoy swimming in the cold hampstead ponds:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://erankeren.com/img/pond.jpeg&#34; width=&#34;300px&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m also a human being / husband / father / basketball player / jogger / &amp;hellip;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also a human being / husband / father / basketball player / jogger&lt;/p&gt;
 </description>
     </item>
     
