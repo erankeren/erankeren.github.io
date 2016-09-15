@@ -6,100 +6,8 @@
     <description>Recent content on Eran Keren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2016 16:37:18 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2016 20:13:09 +0100</lastBuildDate>
     <atom:link href="https://erankeren.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Building my website - Version II</title>
-      <link>https://erankeren.com/posts/building-my-website-version-2/</link>
-      <pubDate>Wed, 14 Sep 2016 16:37:18 +0100</pubDate>
-      
-      <guid>https://erankeren.com/posts/building-my-website-version-2/</guid>
-      <description>
-
-&lt;h1 id=&#34;what&#34;&gt;What?!&lt;/h1&gt;
-
-&lt;p&gt;&amp;hellip;I got everything working, but then I was thinking to myself why do I need to have such a heavy stack just for creating a few pages ?!&lt;/p&gt;
-
-&lt;p&gt;Also I&amp;rsquo;ve found out that github pages supports custom domains&amp;hellip;&lt;strong&gt;yeah - free hosting!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;so&#34;&gt;So&amp;hellip;&lt;/h2&gt;
-
-&lt;p&gt;I will go with the following stack:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; - static page generator&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/IvanChou/yii.im&#34;&gt;Vec&lt;/a&gt; - for my hugo theme&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I had to create two git repo&amp;rsquo;s:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;A repo for my source files for hugo (&lt;a href=&#34;https://github.com/erankeren/erankeren.com-site&#34;&gt;https://github.com/erankeren/erankeren.com-site&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;A repo for serving my github page (&lt;a href=&#34;https://github.com/erankeren/erankeren.github.io&#34;&gt;https://github.com/erankeren/erankeren.github.io&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Now I had to change the dns records in cloudflare to point to my github page.&lt;/p&gt;
-
-&lt;h1 id=&#34;oops&#34;&gt;Oops&amp;hellip;&lt;/h1&gt;
-
-&lt;p&gt;It was working fine with just one glich: Github pages doesnt support SSL with custom domain (&lt;strong&gt;really&amp;hellip;why???&amp;hellip;&lt;/strong&gt;)&lt;/p&gt;
-
-&lt;h2 id=&#34;finally&#34;&gt;Finally&lt;/h2&gt;
-
-&lt;p&gt;I could have just use HTTP but my security background didn&amp;rsquo;t allow me to do so.&lt;/p&gt;
-
-&lt;p&gt;And then I&amp;rsquo;ve found this post in the cloudflare blog:
-&lt;a href=&#34;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&#34;&gt;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;hellip;Yeah&amp;hellip; :-)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Building my website - Version I</title>
-      <link>https://erankeren.com/posts/building-my-website-version-1/</link>
-      <pubDate>Wed, 14 Sep 2016 16:04:16 +0100</pubDate>
-      
-      <guid>https://erankeren.com/posts/building-my-website-version-1/</guid>
-      <description>
-
-&lt;h2 id=&#34;wordpress&#34;&gt;Wordpress&lt;/h2&gt;
-
-&lt;p&gt;At first I thought about building my website using good old wordpress. I thought about the following stack:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Amazon ec2 instance for the server&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Wordpress running inside a docker container (because installing wordpress is a nightmare! and docker is cool&amp;hellip;)
-&lt;strong&gt;&lt;a href=&#34;https://github.com/eugeneware/docker-wordpress-nginx&#34;&gt;https://github.com/eugeneware/docker-wordpress-nginx&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Nginx - reverse proxy into wordpress inside the docker&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Cloudflare - for the free ssl certificates and dns manager&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I could have just bought a hosted soultion like they offer at &lt;strong&gt;&lt;a href=&#34;https://uk.godaddy.com/hosting/wordpress-hosting&#34;&gt;godaddy&lt;/a&gt;&lt;/strong&gt; but I love playing with stuff.&lt;/p&gt;
-
-&lt;h2 id=&#34;wait&#34;&gt;Wait&amp;hellip;&lt;/h2&gt;
-
-&lt;p&gt;After installing and configuring all of the above there were two things I had to fix:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The theme I was using was pulling google fonts JS using HTTP and not HTTPS, which caused the browser to display an error about mixing HTTP and HTTPS. So i&amp;rsquo;ve found this (thanks google):
-&lt;a href=&#34;http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/&#34;&gt;http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Wordpress is not playing nice behind a reverse proxy, fixed by:
-&lt;a href=&#34;https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/&#34;&gt;https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
     
     <item>
       <title></title>
@@ -158,6 +66,98 @@
 &lt;p&gt;&lt;img src=&#34;https://erankeren.com/img/pond.jpeg&#34; width=&#34;300px&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m also a human being / husband / father / basketball player / jogger&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building my website - Version II</title>
+      <link>https://erankeren.com/posts/building-my-website-version-2/</link>
+      <pubDate>Thu, 01 Sep 2016 16:37:18 +0100</pubDate>
+      
+      <guid>https://erankeren.com/posts/building-my-website-version-2/</guid>
+      <description>
+
+&lt;h1 id=&#34;what&#34;&gt;What?!&lt;/h1&gt;
+
+&lt;p&gt;&amp;hellip;I got everything working, but then I was thinking to myself why do I need to have such a heavy stack just for creating a few pages ?!&lt;/p&gt;
+
+&lt;p&gt;Also I&amp;rsquo;ve found out that github pages supports custom domains&amp;hellip;&lt;strong&gt;yeah - free hosting!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;so&#34;&gt;So&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;I will go with the following stack:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; - static page generator&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/IvanChou/yii.im&#34;&gt;Vec&lt;/a&gt; - for my hugo theme&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://cloudflare.com&#34;&gt;Cloudflare&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I had to create two git repo&amp;rsquo;s:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;A repo for my source files for hugo (&lt;a href=&#34;https://github.com/erankeren/erankeren.com-site&#34;&gt;https://github.com/erankeren/erankeren.com-site&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A repo for serving my github page (&lt;a href=&#34;https://github.com/erankeren/erankeren.github.io&#34;&gt;https://github.com/erankeren/erankeren.github.io&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Now I had to change the dns records in cloudflare to point to my github page.&lt;/p&gt;
+
+&lt;h1 id=&#34;oops&#34;&gt;Oops&amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;It was working fine with just one glich: Github pages doesnt support SSL with custom domain (&lt;strong&gt;really&amp;hellip;why???&amp;hellip;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;finally&#34;&gt;Finally&lt;/h2&gt;
+
+&lt;p&gt;I could have just use HTTP but my security background didn&amp;rsquo;t allow me to do so.&lt;/p&gt;
+
+&lt;p&gt;And then I&amp;rsquo;ve found this post in the cloudflare blog:
+&lt;a href=&#34;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&#34;&gt;https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;hellip;Yeah&amp;hellip; :-)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building my website - Version I</title>
+      <link>https://erankeren.com/posts/building-my-website-version-1/</link>
+      <pubDate>Sat, 20 Aug 2016 16:04:16 +0100</pubDate>
+      
+      <guid>https://erankeren.com/posts/building-my-website-version-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;wordpress&#34;&gt;Wordpress&lt;/h2&gt;
+
+&lt;p&gt;At first I thought about building my website using good old wordpress. I thought about the following stack:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Amazon ec2 instance for the server&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wordpress running inside a docker container (because installing wordpress is a nightmare! and docker is cool&amp;hellip;)
+&lt;strong&gt;&lt;a href=&#34;https://github.com/eugeneware/docker-wordpress-nginx&#34;&gt;https://github.com/eugeneware/docker-wordpress-nginx&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Nginx - reverse proxy into wordpress inside the docker&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Cloudflare - for the free ssl certificates and dns manager&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I could have just bought a hosted soultion like they offer at &lt;strong&gt;&lt;a href=&#34;https://uk.godaddy.com/hosting/wordpress-hosting&#34;&gt;godaddy&lt;/a&gt;&lt;/strong&gt; but I love playing with stuff.&lt;/p&gt;
+
+&lt;h2 id=&#34;wait&#34;&gt;Wait&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;After installing and configuring all of the above there were two things I had to fix:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The theme I was using was pulling google fonts JS using HTTP and not HTTPS, which caused the browser to display an error about mixing HTTP and HTTPS. So i&amp;rsquo;ve found this (thanks google):
+&lt;a href=&#34;http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/&#34;&gt;http://www.amixa.com/blog/2012/06/06/how-to-use-google-fonts-under-both-ssl-and-non-ssl-without-ssl-insecure-messages/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wordpress is not playing nice behind a reverse proxy, fixed by:
+&lt;a href=&#34;https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/&#34;&gt;https://cmanios.wordpress.com/2014/04/12/nginx-https-reverse-proxy-to-wordpress-with-apache-http-and-different-port/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
